@@ -40,3 +40,28 @@ print(rokpiaty['Utarg'].mean())
 rokczw.to_csv('zamówienia_2004.csv')
 rokpiaty.to_csv('zamówienia_2005.csv')
 
+#pandas2czesc
+#zad1
+# grupa = df.groupby(['Rok']).agg({'Liczba':['sum']})
+# wykres = grupa.plot()
+# wykres.legend()
+# plt.title("Liczba urodzonych dzieci dla każdego roku")
+# plt.show()
+# #zad2
+# grupa = df.groupby(['Plec']).agg({'Liczba':['sum']})
+# wykres = grupa.plot.bar()
+# wykres.legend()
+# plt.xticks(rotation=0)
+# plt.title("Liczba urodzonych chłopców i dziewczynek")
+# plt.show()
+# #zad3
+# grupa = df[df['Rok'] > 2012].groupby(['Plec']).agg({'Liczba':['sum']})
+# wykres = grupa.plot.pie(subplots=True, autopct='%.2f %%', fontsize=20)
+# plt.legend()
+# plt.show()
+#zad4
+# df = pd.read_csv('zamowienia.csv', delimiter=';')
+# policzone = df.groupby('Sprzedawca').size()
+# policzone.plot.bar(figsize=(6,9))
+# plt.ylabel("liczba zamówień")
+# plt.show()
